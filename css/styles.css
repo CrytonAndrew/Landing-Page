@@ -44,3 +44,22 @@
   right: 50%;
   right: 150px;
 }
+
+/* Reviews section  */
+
+.reviews-section {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  color: #00adb5;
+}
+
+/* About author section  */
+#about-author-secton {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.author-images {
+  max-width: 600px;
+  height: auto;
+}
