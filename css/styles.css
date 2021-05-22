@@ -1,7 +1,20 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /*--------- navbar styling ----------------*/
+
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .fas {
   font-size: 20px;
+}
+
+.nav-icons {
+  color: #1eae98;
 }
 
 /*--------- Main Page Styling --------------*/
@@ -26,8 +39,10 @@
 }
 
 .main-image {
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
+  margin-left: 100px;
+  margin-bottom: 50px;
 }
 
 /* About Section  */
@@ -37,9 +52,22 @@
   margin-bottom: 200px;
 }
 
+.about-book-icon {
+  color: #00adb5;
+  font-size: 50px;
+}
+
+.about-book-p {
+  color: #444f5a;
+}
+
+.book-quote {
+  color: #f07b3f;
+}
+
 .vl {
   border-left: 6px solid #00adb5;
-  height: 200px;
+  height: 50px;
   position: absolute;
   right: 50%;
   right: 150px;
@@ -47,10 +75,27 @@
 
 /* Reviews section  */
 
-.reviews-section {
-  margin-top: 100px;
-  margin-bottom: 200px;
-  color: #00adb5;
+#reviews-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #444f5a;
+  margin-bottom: 100px;
+}
+
+.person-review-image {
+  border-radius: 50%;
+  max-width: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-text {
+  text-align: center;
+}
+
+.reviews-carousel {
+  color: #fff;
 }
 
 /* About author section  */

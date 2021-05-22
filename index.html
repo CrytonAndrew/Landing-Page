@@ -15,6 +15,13 @@
     <!-- font-awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -32,16 +39,16 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i></a>
+                        <a class="nav-link active nav-icons" aria-current="page" href="#"><i class="fas fa-home"></i></a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link"><i class="fas fa-user"></i></a>
+                          <a class="nav-link"><i class="fas fa-user nav-icons"></i></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link"><i class="fas fa-book"></i></a>
+                        <a class="nav-link"><i class="fas fa-book nav-icons"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><i class="fas fa-phone-square-alt"></i></a>
+                        <a class="nav-link"><i class="fas fa-phone-square-alt nav-icons"></i></a>
                     </li>
                     </ul>
                   </div>
@@ -71,12 +78,12 @@
     <section id="about-section" class="container">
         <div class="row">
             <div class="col">
-                <i class="fas fa-book-open"></i>
+                <i class="fas fa-book-open about-book-icon"></i>
                 <br>
                 <br>
                 <h2>ABOUT THE BOOK</h2>
                 <br>
-                <p>
+                <p class="about-book-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Praesent sollicitudin magna vitae ullamcorper venenatis.
                     Duis hendrerit, risus vitae tempor volutpat, 
@@ -85,21 +92,25 @@
                 </p>
             </div>
             <div class="col">
-                <p>
+                <br>
+                <br>
+                <br>
+                <p class="about-book-p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Praesent sollicitudin magna vitae ullamcorper venenatis. 
                     Duis hendrerit, risus vitae tempor volutpat, leo justo vulputate ex, 
                     vel semper diam nulla ut massa. Integer fringilla ipsum sit amet gravida euismod
                 </p>
                 <br>
+                <br>
                 <div class="row">
-                    <div class="col-sm-8">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Praesent sollicitudin magna vitae ullamcorper venenatis. Duis hendrerit, 
+                    <div class="col-sm-11">
+                        <p class="book-quote">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Praesent sollicitudin magna vitae ullamcorper venenatis. Duis hendrerit"
                         </p>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-1">
                         <div class="vl"></div>
                     </div>
                 </div>
@@ -108,48 +119,53 @@
     </section>
 
     <section id="reviews-section">
-        <div>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouselExampleControlsNoTouching" class="carousel carousel-light slide reviews-carousel container" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="review-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent sollicitudin magna vitae ullamcorper venenatis</p>
+                <h6 class="review-text">⭐️⭐️⭐️⭐️⭐️</h6>
+                <div class="row review-profile">
+                    <div class="col-sm-1">
+                        <img class="person-review-image" src="images/person.jpeg" alt="person">
+                    </div>
+                    <div class="col-sm-11">
+                        <h4 class="review-text">Name and Surname</h4>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h3>First slide label</h3>
-                      <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h3>Second slide label</h3>
-                      <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h3>Third slide label</h3>
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
-        </div>
+              <div class="carousel-item">
+                <p class="review-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent sollicitudin magna vitae ullamcorper venenatis</p>
+                <h1 class="review-text">Hello</h1>
+                <h4 class="review-text">World</h4>
+              </div>
+              <div class="carousel-item">
+                <p class="review-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent sollicitudin magna vitae ullamcorper venenatis</p>
+                <h1 class="review-text"></h1>
+                <h4 class="review-text">World</h4>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
     </section>
 
-    <section id="about-author-section">
+    <section id="about-author-section" class="container">
         <div class="row">
             <div class="col">
+                <br>
                 <img class="author-images" src="images/book_gray.jpeg" alt="book">
             </div>
             <div class="col">
@@ -162,14 +178,14 @@
                     risus vitae tempor volutpat, leo justo vulputate ex, vel semper diam nulla ut massa. 
                     Integer fringilla ipsum sit amet gravida euismod
                 </p>
-                <hr>
+                <br>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Praesent sollicitudin magna vitae ullamcorper venenatis. Duis hendrerit, 
                     risus vitae tempor volutpat, leo justo vulputate ex, vel semper diam nulla ut massa. 
                     Integer fringilla ipsum sit amet gravida euismod
                 </p>
-                <hr>
+                <br>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Praesent sollicitudin magna vitae ullamcorper venenatis. Duis hendrerit, 
@@ -180,8 +196,8 @@
         </div>
     </section>
 
-    <section>
-        <div>
+    <section id="contact-section" class="container">
+        <div class="row">
             <h2>Contact Me</h2>
             <hr>
             <div class="mb-3">
