@@ -19,10 +19,11 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section>
-        <div>
+
+    <section id="title">
+        <div class="container">
             <!-- Navigation Center  -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container ">
                   <a class="navbar-brand" href="#">Cryton's Book</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,24 +48,156 @@
                 </div>
               </nav>
 
-              <div>
-                  <div>
-                      <h1>Book Title</h1>
-                      <hr>
-                      <p>
+              <div class="row container-margin">
+                <div class="col">
+                    <br>
+                    <br>
+                    <h1 class="main-title">Book Title</h1>
+                    <br>
+                    <p class="main-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Praesent sollicitudin magna vitae ullamcorper venenatis. 
                         Duis hendrerit, risus vitae tempor volutpat, leo justo vulputate ex, vel semper 
                         diam nulla ut massa. 
-                      </p>
-                  </div>
-                  <div>
-                      <img src="images/book.jpeg" alt="book">
-                  </div>
+                    </p>
+                </div>
+                <div class="col">
+                    <img class="main-image" src="images/book.jpeg" alt="book">
+                </div>
               </div>
         </div>
     </section>
 
-    
+    <section>
+        <div>
+            <div>
+                <i class="fas fa-book-open"></i>
+                <br>
+                <h2>ABOUT THE BOOK</h2>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent sollicitudin magna vitae ullamcorper venenatis.
+                    Duis hendrerit, risus vitae tempor volutpat, 
+                    leo justo vulputate ex, vel semper diam nulla ut massa. 
+                    Integer fringilla ipsum sit amet gravida euismod 
+                </p>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent sollicitudin magna vitae ullamcorper venenatis. 
+                    Duis hendrerit, risus vitae tempor volutpat, leo justo vulputate ex, 
+                    vel semper diam nulla ut massa. Integer fringilla ipsum sit amet gravida euismod
+                </p>
+                <br>
+                <div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Praesent sollicitudin magna vitae ullamcorper venenatis. Duis hendrerit, 
+                            risus vitae tempor volutpat, leo justo vulputate ex, vel semper diam nulla ut massa. 
+                            Integer fringilla ipsum sit amet gravida euismod
+                        </p>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div>
+                <img src="images/book_gray.jpeg" alt="book">
+            </div>
+            <div>
+                <h2>ABOUT THE AUTHOR</h2>
+                <hr>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent sollicitudin magna vitae ullamcorper venenatis. Duis hendrerit, 
+                    risus vitae tempor volutpat, leo justo vulputate ex, vel semper diam nulla ut massa. 
+                    Integer fringilla ipsum sit amet gravida euismod
+                </p>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent sollicitudin magna vitae ullamcorper venenatis. Duis hendrerit, 
+                    risus vitae tempor volutpat, leo justo vulputate ex, vel semper diam nulla ut massa. 
+                    Integer fringilla ipsum sit amet gravida euismod
+                </p>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent sollicitudin magna vitae ullamcorper venenatis. Duis hendrerit, 
+                    risus vitae tempor volutpat, leo justo vulputate ex, vel semper diam nulla ut massa. 
+                    Integer fringilla ipsum sit amet gravida euismod
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>Contact Me</h2>
+            <hr>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+        </div>
+    </section>
+
+    <footer>
+        2021 
+    </footer>
 </body>
 </html>

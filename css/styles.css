@@ -1,3 +1,31 @@
+/*--------- navbar styling ----------------*/
+
 .fas {
   font-size: 20px;
+}
+
+/*--------- Main Page Styling --------------*/
+#title {
+  background-color: #eeeeee;
+}
+
+.container-margin {
+  margin: 0 5%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.main-title {
+  font-size: 50px;
+}
+
+.main-description {
+  font-size: 20px;
+}
+
+.main-image {
+  max-width: 500px;
+  height: auto;
 }
